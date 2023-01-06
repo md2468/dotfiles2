@@ -61,3 +61,6 @@ endfunction
 "Colour scheme
 autocmd ColorScheme * hi Normal guibg=#000000
 colorscheme gruvbox
+
+"Disable mouse
+set mouse=
