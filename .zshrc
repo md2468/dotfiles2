@@ -29,8 +29,8 @@ precmd() {
 	RPROMPT="%F{250}[%T]%f"
 
 	if [ $EXIT_STATUS != 0 ]; then
-		PS1=" %B%F{250}($EXIT_STATUS)%f"$'\t'"%F{60}%d%f %F{196}->%f%b "
+		PS1=" %B%F{250}[$EXIT_STATUS]%f"$' '"%F{33}%n@%M:%d%f %F{196}->%f%b "
 	else
-		PS1=" %B%F{250}($EXIT_STATUS)%f"$'\t'"%F{60}%d%f %F{119}->%f%b "
+		PS1=" %B%F{250}[$EXIT_STATUS]%f"$' '"%F{33}%n@%M:%d%f %F{119}->%f%b "
 	fi
 }
